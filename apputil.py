@@ -37,6 +37,7 @@ def task_1():
         "Cleaning gender column: standardizing case and converting blanks to NA."
     )
     df["gender"] = df["gender"].str.strip().str.lower()
+    df_bellevue[df_bellevue['gender'].isin(['w', 'm'])]
     df["gender"] = df["gender"].replace("", pd.NA)
 
     missing_counts = df.isna().sum()
