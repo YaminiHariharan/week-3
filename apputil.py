@@ -1,6 +1,6 @@
-import seaborn as sns
+import numpy as np
 import pandas as pd
-import seaborn as sns
+
 
 
 # Exercise 1
@@ -28,6 +28,11 @@ print(to_binary(12))
 
 
 # Exercise 3
+
+url = 'https://github.com/melaniewalsh/Intro-Cultural-Analytics/raw/master/book/data/bellevue_almshouse_modified.csv'
+
+df_bellevue = pd.read_csv(url)
+
 
 def task_1():
     """Return column names sorted by increasing number of missing values."""
